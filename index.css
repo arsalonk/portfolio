@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  background-color: rgb(21, 23, 24);
+  margin: 0 auto;
+  text-align: center
+}
+
+.contacts {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+
+.contacts a {
+  font-size: 50px;
+  margin: 10px;
+  color: rgb(0, 204, 255)
+}
+
+.contacts a:hover {
+  color: rgb(130, 201, 0)
+}
+
+.head {
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav {
+  float: right;
+}
+
+.nav-button {
+  color: rgb(0, 204, 255);
+  border: 1px solid rgb(21, 23, 24);
+  background-color: rgb(21, 23, 24);
+  margin: 10px 10px 0 0; 
+}
+
+.page {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.p-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  max-height: 400px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: rgb(41, 200, 115);
+  padding: 5px;
+}
+
+.project-links a:visited {
+  color: rgb(88, 155, 0);
+}
