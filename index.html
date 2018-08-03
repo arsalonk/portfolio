@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,34 +9,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
+
 <body>
   <header role="banner" class="head">
     <nav role="navigation" class="nav">
-      <button class="nav-button">Home</button>
+      <!-- <button class="nav-button">Home</button> -->
       <button class="nav-button">About</button>
       <button class="nav-button">Projects</button>
       <button class="nav-button">Contact</button>
     </nav>
   </header>
   <main role="main" class="container">
-    <section role="region" id="Home" class="home page">
+    <!-- <section role="region" id="Home" class="home page">
 
-    </section>
+    </section> -->
 
-    <section role="region" id="About" class="about hidden page">
-      <h2>About</h2>
-      <p>Hi, my name is Sayed Khan, I am a web dev</p>
-    </section>
-
-    <section role="region" id="Projects" class="projects hidden page">
+    <section role="region" id="Projects" class="projects page">
       <h2>Projects</h2>
       <div class="p-container">
         <article class="project">
           <h3>Tankler</h3>
-          <img class='project-image' src="images/tankler.PNG"/>
+          <img class='project-image' src="images/tankler3.PNG" />
           <p>
-            Tankler is a saltwater tank manager. It allows users to add livestock from the database to their tank, keep track of tank parameters, and create
-            recurring tasks which will be displayed when due. It was built to help users take care of their saltwater fishtanks
+            Tankler is a saltwater tank manager. It allows users to add livestock from the database to their tank, keep track of tank
+            parameters, and create recurring tasks which will be displayed when due. It was built to help users take care
+            of their saltwater fishtanks
           </p>
           <p>
             Tankler is a fullstack app built using React/Redux for the front end and Node, Express, and Mongo/Mongoose for the back end
@@ -48,18 +46,30 @@
       </div>
     </section>
 
+    <section role="region" id="About" class="about hidden page">
+      <h2>About</h2>
+      <p>Hi, my name is Sayed Khan, I am a web dev</p>
+    </section>
+
     <section role="region" id="Contact" class="contact hidden page">
-      <h2>Contact</h2>
-      <button>Email</button>
-      <button>Github</button>
-      <button>LinkedIn</button>
+      <h2>Contact me</h2>
+      <form class="contact-form" action="https://formspree.io/arsalon47@gmail.com" method="POST">
+        <input type="email" class="email" name="email" placeholder="Your Email">
+        <textarea name="message" class="message" placeholder="Your message..."></textarea>
+        <button type="submit" class="sbt-button">Send</button>
+      </form>
     </section>
     <footer class="contacts">
-      <a href="https://github.com/arsalonk" target="_blank" class="btn"><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/sayed-k/" target="_blank" class="btn"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/arsalonk" target="_blank" class="btn">
+        <i class="fa fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/sayed-k/" target="_blank" class="btn">
+        <i class="fa fa-linkedin"></i>
+      </a>
     </footer>
   </main>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="index.js"></script>
 </body>
+
 </html>

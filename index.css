@@ -27,12 +27,34 @@ body {
   color: rgb(130, 201, 0)
 }
 
+.contact form {
+  margin: auto;
+  max-width: 400px;
+}
+
+.email, .message {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  padding-left: 5px;
+  border: 1px solid lightgrey;
+  font-size: 20px;
+}
+
+.email {
+  height: 50px;
+}
+
 .head {
   height: 50px;
 }
 
 .hidden {
   display: none;
+}
+
+.message {
+  height: 200px;
 }
 
 .nav {
@@ -71,4 +93,10 @@ body {
 
 .project-links a:visited {
   color: rgb(88, 155, 0);
+}
+
+.sbt-button {
+  margin: auto;
+  width: 50%;
+  height: 35px;
 }
