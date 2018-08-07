@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #4D4D4D;
+  background-color: rgb(59, 59, 59);
   margin: 0 auto;
   text-align: center;
   min-height: 100vh;
@@ -20,12 +20,14 @@ body {
 .contacts a {
   font-size: 50px;
   margin: 10px;
-  color: rgb(0, 204, 255);
+  color: rgb(36, 126, 148);
   text-decoration: none;
 }
 
 .contacts a:hover {
-  color: rgb(130, 201, 0)
+  transition: 0.15s;
+  transform: scale(1.5);
+  color: rgb(5, 91, 117)
 }
 
 .contact-container {
@@ -69,15 +71,64 @@ body {
   display: none;
 }
 
+/* .home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.home-button {
+  margin-top: 30px;
+  min-width: 150px;
+  height: 40px;
+  font-size: 14px;
+  color: white;
+  background-color: rgb(12, 103, 126);
+  border: 2px solid white;
+}
+
+.home-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.home-button:hover span {
+  padding-right: 25px;
+}
+
+.home-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .message {
   height: 200px;
 }
 
-.nav-button {
+.nav-button, .nav-home {
   cursor: pointer;
   color: rgb(0, 204, 255);
-  border: 1px solid #4D4D4D;
-  background-color: #4D4D4D;
+  border: 1px solid rgb(59, 59, 59);
+  background-color: rgb(59, 59, 59);
   margin: 10px 10px 0 0; 
 }
 
@@ -125,15 +176,16 @@ body {
 
 .project-links a {
   text-decoration: none;
-  color: rgb(41, 200, 115);
+  color: rgb(70, 158, 199);
   padding: 5px;
 }
 
 .project-links a:visited {
-  color: rgb(88, 155, 0);
+  color: rgb(0, 106, 155);
 }
 
 .sbt-button {
+  cursor: pointer;
   margin: auto;
   width: 50%;
   height: 35px;

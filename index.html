@@ -5,26 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
+  <title>Portfolio => Sayed Khan</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" type="text/css" href="styles/index.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/comp.ico" />
+
 </head>
 
 <body>
   <header role="banner" class="head">
-    <nav role="navigation" class="nav">
-      <!-- <button class="nav-button">Home</button> -->
+    <nav role="navigation" id="nav" class="nav site hidden">
+      <button class="nav-home">Home</button>
       <button class="nav-button">Projects</button>
       <button class="nav-button">About</button>
       <button class="nav-button">Contact</button>
     </nav>
   </header>
   <main role="main" class="container">
-    <!-- <section role="region" id="Home" class="home page">
+    <section role="region" id="Home" class="home page">
+      <div class="home-content">
+        <h1 class="home-text">Sayed Khan</h1>
+        <p class="home-text">Full-Stack Web Developer</p>
+        <button class="home-button">
+          <span>Explore my work</span>
+        </button>
+      </div>
+    </section>
 
-    </section> -->
-
-    <section role="region" id="Projects" class="projects page">
+    <section role="region" id="Projects" class="projects page hidden site">
       <ul class="p-container">
         <li class="project">
           <img class='project-image' src="images/tankler.PNG" />
@@ -37,8 +45,8 @@
             React | Redux | Node | Express | MongoDB | Passport | JWT | mLab
           </p>
           <div class="project-links">
-            <a href="https://www.tankler.us" target="_blank">Live</a>
-            <a href="https://github.com/arsalonk/fullstack-capstone-client" target="_blank">Source</a>
+            <a href="https://www.tankler.us" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/arsalonk/fullstack-capstone-client" target="_blank" rel="noopener">Source</a>
           </div>
         </li>
         <li class="project">
@@ -53,8 +61,8 @@
             React | Redux | Node | Express | MongoDB | Passport | JWT | mLab
           </p>
           <div class="project-links">
-            <a href="https://the-paths.firebaseapp.com/" target="_blank">Live</a>
-            <a href="https://github.com/ThePaths/client" target="_blank">Source</a>
+            <a href="https://the-paths.firebaseapp.com/" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/ThePaths/client" target="_blank" rel="noopener">Source</a>
           </div>
         </li>
 
@@ -70,8 +78,8 @@
             React | Redux
           </p>
           <div class="project-links">
-            <a href="https://abjadify.netlify.com/" target="_blank">Live</a>
-            <a href="https://github.com/arsalonk/abjadify" target="_blank">Source</a>
+            <a href="https://abjadify.netlify.com/" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/arsalonk/abjadify" target="_blank" rel="noopener">Source</a>
           </div>
         </li>
 
@@ -87,8 +95,8 @@
             React | Redux | Node | Express | MongoDB | Passport | JWT | mLab
           </p>
           <div class="project-links">
-            <a href="https://sr-client.herokuapp.com/" target="_blank">Live</a>
-            <a href="https://github.com/thinkful-ei20/SP-sayed-darren-client" target="_blank">Source</a>
+            <a href="https://sr-client.herokuapp.com/" target="_blank" rel="noopener">Live</a>
+            <a href="https://github.com/thinkful-ei20/SP-sayed-darren-client" target="_blank" rel="noopener">Source</a>
           </div>
         </li>
       </ul>
@@ -111,11 +119,14 @@
       </div>
     </section>
   </main>
-  <footer class="contacts">
-    <a href="https://github.com/arsalonk" target="_blank" class="btn">
+  <footer id="footer" class="contacts site hidden">
+    <a href="https://github.com/arsalonk" target="_blank" rel="noopener" class="btn">
       <i class="fa fa-github"></i>
     </a>
-    <a href="https://www.linkedin.com/in/sayed-k/" target="_blank" class="btn">
+    <a href="mailto:arsalon47@gmail.com" class="btn">
+      <i class="fa fa-envelope"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/sayed-k/" target="_blank" rel="noopener" class="btn">
       <i class="fa fa-linkedin"></i>
     </a>
     <p>&copy; 2018 Sayed Khan</p>
