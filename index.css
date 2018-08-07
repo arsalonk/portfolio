@@ -28,26 +28,36 @@ body {
   color: rgb(130, 201, 0)
 }
 
+.contact-container {
+  min-width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .contact form {
-  margin: auto;
-  max-width: 400px;
+  /* margin: auto; */
+  /* min-width: 400px; */
 }
 
 .container {
   min-height: 75vh;
+  padding: 0 20px;
   /* margin-bottom: -80px; */
 }
 
-.email, .message {
+.email, .message, .name {
   display: block;
   margin: 20px auto;
   width: 100%;
   padding-left: 5px;
   border: 1px solid lightgrey;
   font-size: 20px;
+  border-radius: 4px;
 }
 
-.email {
+.email, .name {
   height: 50px;
 }
 
@@ -63,11 +73,8 @@ body {
   height: 200px;
 }
 
-.nav {
-  float: right;
-}
-
 .nav-button {
+  cursor: pointer;
   color: rgb(0, 204, 255);
   border: 1px solid #4D4D4D;
   background-color: #4D4D4D;
@@ -104,6 +111,10 @@ body {
           box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
 }
 
+.project p {
+  padding: 0 10px;
+}
+
 .project-image {
   /* border-radius: 8px 8px 0 0; */
   width: 100%;
@@ -126,4 +137,23 @@ body {
   margin: auto;
   width: 50%;
   height: 35px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgb(12, 103, 126);
+}
+
+.sbt-button:hover {
+  font-weight: 400;
+  color: rgb(12, 103, 126);
+  border: 2px solid rgb(12, 103, 126);
+  background-color: rgb(255, 255, 255);
+}
+
+/* media queries  */
+@media (min-width: 500px) {
+  .nav {
+    float: right;
+  }
 }
