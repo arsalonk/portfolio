@@ -3,24 +3,25 @@
 }
 
 body {
-  background-color: rgb(21, 23, 24);
+  background-color: #4D4D4D;
   margin: 0 auto;
-  text-align: center
+  text-align: center;
+  min-height: 100vh;
 }
 
 .contacts {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  margin: auto;
+  margin: 80px auto 0 auto;
+}
 
+.contacts p {
+  margin: 0;
 }
 
 .contacts a {
   font-size: 50px;
   margin: 10px;
-  color: rgb(0, 204, 255)
+  color: rgb(0, 204, 255);
+  text-decoration: none;
 }
 
 .contacts a:hover {
@@ -30,6 +31,11 @@ body {
 .contact form {
   margin: auto;
   max-width: 400px;
+}
+
+.container {
+  min-height: 75vh;
+  /* margin-bottom: -80px; */
 }
 
 .email, .message {
@@ -63,8 +69,8 @@ body {
 
 .nav-button {
   color: rgb(0, 204, 255);
-  border: 1px solid rgb(21, 23, 24);
-  background-color: rgb(21, 23, 24);
+  border: 1px solid #4D4D4D;
+  background-color: #4D4D4D;
   margin: 10px 10px 0 0; 
 }
 
@@ -76,9 +82,30 @@ body {
 .p-container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 0;
+}
+
+.project {
+  /* border-radius: 8px; */
+  margin: 40px 0;
+  background-color: rgb(43, 43, 43);
+  padding: 0 0 10px 0;
+  list-style: none;
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.project:hover {
+  transition: 0.15s;
+  transform: scale(1.01);
+  -webkit-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
+     -moz-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
+          box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
 }
 
 .project-image {
+  /* border-radius: 8px 8px 0 0; */
   width: 100%;
   height: auto;
   max-width: 800px;
