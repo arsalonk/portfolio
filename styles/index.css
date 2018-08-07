@@ -2,12 +2,19 @@
   box-sizing: border-box
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   background-color: rgb(59, 59, 59);
   margin: 0 auto;
   text-align: center;
   min-height: 100vh;
+  Font-Family: 'Open Sans', Sans-Serif;
+  Font-Size: 15px;
 }
+
 
 .contacts {
   margin: 80px auto 0 auto;
@@ -15,6 +22,7 @@ body {
 
 .contacts p {
   margin: 0;
+  color: white;
 }
 
 .contacts a {
@@ -36,11 +44,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.contact form {
-  /* margin: auto; */
-  /* min-width: 400px; */
 }
 
 .container {
@@ -120,6 +123,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.home-text {
+  Font-Family: 'Ubuntu', Sans-Serif;
+  Font-Size: 48px;
+  margin: 0;
+}
+
 .message {
   height: 200px;
 }
@@ -130,6 +139,10 @@ body {
   border: 1px solid rgb(59, 59, 59);
   background-color: rgb(59, 59, 59);
   margin: 10px 10px 0 0; 
+}
+
+.nav-button:hover, .nav-home:hover {
+  color: white;
 }
 
 .page {
