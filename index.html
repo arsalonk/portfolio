@@ -8,11 +8,13 @@
   <title>Portfolio => Sayed Khan</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/sub.css">
   <link rel="shortcut icon" type="image/x-icon" href="images/comp.ico" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Eczar:600|Merriweather" rel="stylesheet">
 </head>
 
-<body>
+<body id="full-site" class="night">
   <header role="banner" class="head">
     <nav role="navigation" id="nav" class="nav site hidden">
       <button class="nav-home">Home</button>
@@ -24,9 +26,31 @@
   <main role="main" class="container">
     <section role="region" id="Home" class="home page">
       <div class="home-content">
+          <div id="sea" class="sea-night">
+              <div class="circle-wrapper">
+                <div class="bubble"></div>
+                <div class="submarine-wrapper">
+                  <div class="submarine-body">
+                    <div class="window"></div>
+                    <div class="engine"></div>
+                    <div class="light"></div>
+                  </div>
+                  <div class="helix"></div>
+                  <div class="hat">
+                    <div class="leds-wrapper">
+                      <div class="periscope"></div>
+                      <div class="leds"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="switch">
+              <div id="circle"></div>
+            </div>
         <h1 class="home-text">Sayed Khan</h1>
         <p>Full-Stack Web Developer</p>
-        <button class="home-button">
+        <button id="home-button" class="home-button">
           <span>Explore my work</span>
         </button>
       </div>
@@ -35,68 +59,76 @@
     <section role="region" id="Projects" class="projects page hidden site">
       <ul class="p-container">
         <li class="project">
-          <img class='project-image' src="images/tankler.PNG" />
-          <p>
-            Tankler is a saltwater tank manager. It allows users to add livestock from the database to their tank, keep track of tank
-            parameters, and create recurring tasks which will be displayed when due. It was built to help users take care
-            of their saltwater fishtanks
-          </p>
-          <p>
-            React | Redux | Node | Express | MongoDB | Passport | JWT | mLab
-          </p>
-          <div class="project-links">
-            <a href="https://www.tankler.us" target="_blank" rel="noopener">Live</a>
-            <a href="https://github.com/arsalonk/fullstack-capstone-client" target="_blank" rel="noopener">Source</a>
+          <img class='project-image' src="images/tankler.PNG" alt="screenshot of tankler login page" />
+          <div class="project-info">
+            <p>
+              Tankler is a saltwater tank manager. It allows users to add livestock from the database to their tank, keep track of tank
+              parameters, and create recurring tasks which will be displayed when due. It was built to help users take care
+              of their saltwater fishtanks
+            </p>
+            <p>
+              React | Redux | Node | Express | MongoDB | Passport | JWT | mLab
+            </p>
+            <div class="project-links">
+              <a href="https://www.tankler.us" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/arsalonk/Tankler-client" target="_blank" rel="noopener">Source</a>
+            </div>
           </div>
         </li>
         <li class="project">
-          <img class="project-image" src="images/melata2.PNG" />
-          <p>
-            A group project built with 3 other developers, Melata is a one stop shop for the coding newbie. It features instructional
-            videos along with an embedded repl.it for coding as they learn. Users can pick through an assortment of languages
-            and frameworks to learn the lastest 'best-practices' in the industry. Sample code is provided with each video
-            to be able to follow along with the developer inspired instructional videos.
-          </p>
-          <p>
-            React | Redux | Node | Express | MongoDB | Passport | JWT | mLab
-          </p>
-          <div class="project-links">
-            <a href="https://the-paths.firebaseapp.com/" target="_blank" rel="noopener">Live</a>
-            <a href="https://github.com/ThePaths/client" target="_blank" rel="noopener">Source</a>
-          </div>
-        </li>
-
-        <li class="project">
-          <img class="project-image" src="images/abjadify.PNG" />
-          <p>
-            Abjadify is a tool built to be used with the Quran. Each arabic letter has number values assigned to them, Abjadify uses
-            both the heavenly and earthly abjad values to take the user inputted arabic text and return total sums of the
-            text, sums for each word, and number values for every letter. Abjadify also informs the user whether the text
-            they have inputted is divisible by either 9 or 7 and the mod 9 value of the text.
-          </p>
-          <p>
-            React | Redux
-          </p>
-          <div class="project-links">
-            <a href="https://abjadify.netlify.com/" target="_blank" rel="noopener">Live</a>
-            <a href="https://github.com/arsalonk/abjadify" target="_blank" rel="noopener">Source</a>
+          <img class="project-image" src="images/melata2.PNG" alt="screenshot of Melata dashboard" />
+          <div class="project-info">
+            <p>
+              A group project built with 3 other developers, Melata is a one stop shop for the coding newbie. It features instructional
+              videos along with an embedded repl.it for coding as they learn. Users can pick through an assortment of languages
+              and frameworks to learn the lastest 'best-practices' in the industry. Sample code is provided with each video
+              to be able to follow along with the developer inspired instructional videos.
+            </p>
+            <p>
+              React | Redux | Node | Express | MongoDB | Passport | JWT | mLab
+            </p>
+            <div class="project-links">
+              <a href="https://the-paths.firebaseapp.com/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/ThePaths/client" target="_blank" rel="noopener">Source</a>
+            </div>
           </div>
         </li>
 
         <li class="project">
-          <img class="project-image" src="images/farsi.PNG" />
-          <p>
-            A spaced repetition app that uses linked lists to help a user learn the Farsi language. The algorithm for the app was built
-            with an array that has linked list functionality due to restrictions from Mlab. The algorithm uses an m value
-            to keep track of how far back the question should be pushed in the array, doubling when answered correctly or
-            being set back to 1 if answered incorrectly.
-          </p>
-          <p>
-            React | Redux | Node | Express | MongoDB | Passport | JWT | mLab
-          </p>
-          <div class="project-links">
-            <a href="https://sr-client.herokuapp.com/" target="_blank" rel="noopener">Live</a>
-            <a href="https://github.com/thinkful-ei20/SP-sayed-darren-client" target="_blank" rel="noopener">Source</a>
+          <img class="project-image" src="images/abjadify.PNG" alt="screenshot of Abjadify" />
+          <div class="project-info">
+            <p>
+              Abjadify is a tool built to be used with the Quran. Each arabic letter has number values assigned to them, Abjadify uses
+              both the heavenly and earthly abjad values to take the user inputted arabic text and return total sums of the
+              text, sums for each word, and number values for every letter. Abjadify also informs the user whether the text
+              they have inputted is divisible by either 9 or 7 and the mod 9 value of the text.
+            </p>
+            <p>
+              React | Redux
+            </p>
+            <div class="project-links">
+              <a href="https://abjadify.netlify.com/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/arsalonk/abjadify" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="project">
+          <img class="project-image" src="images/farsi.PNG" alt="screenshot of Learn-Farsi register page" />
+          <div class="project-info">
+            <p>
+              A spaced repetition app that uses linked lists to help a user learn the Farsi language. The algorithm for the app was built
+              with an array that has linked list functionality due to restrictions from Mlab. The algorithm uses an m value
+              to keep track of how far back the question should be pushed in the array, doubling when answered correctly
+              or being set back to 1 if answered incorrectly.
+            </p>
+            <p>
+              React | Redux | Node | Express | MongoDB | Passport | JWT | mLab
+            </p>
+            <div class="project-links">
+              <a href="https://sr-client.herokuapp.com/" target="_blank" rel="noopener">Live</a>
+              <a href="https://github.com/thinkful-ei20/SP-sayed-darren-client" target="_blank" rel="noopener">Source</a>
+            </div>
           </div>
         </li>
       </ul>
@@ -114,12 +146,12 @@
           <input type="text" class="name" name="name" placeholder="Name">
           <input type="email" class="email" name="email" placeholder="Email">
           <textarea name="message" class="message" placeholder="Your message..."></textarea>
-          <button type="submit" class="sbt-button">Send</button>
+          <button type="submit" id="sbt-button" class="sbt-button">Send</button>
         </form>
       </div>
     </section>
   </main>
-  <footer id="footer" class="contacts site hidden">
+  <footer id="footer" class="footer site hidden">
     <a href="https://github.com/arsalonk" target="_blank" rel="noopener" class="btn">
       <i class="fa fa-github"></i>
     </a>
