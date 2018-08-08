@@ -147,7 +147,7 @@ body {
 
 .home-content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -307,15 +307,15 @@ body {
 }
 
 /* mobile styles */
-/* @media (max-width: 420px) and (max-height: 830px) {
+@media (max-width: 420px) and (max-height: 830px) {
   .home-content {
-    top: 75%
+    top: 50%
   }
   .home-button {
     margin: 0;
   }
 }
-
+/* 
 @media (max-width: 320px) and (max-height: 640px) {
   .container {
     padding: 0;
