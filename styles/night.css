@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 .site-night {
   background-color: #2e2e2e;
   margin: 0 auto;
