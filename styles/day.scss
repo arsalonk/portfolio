@@ -54,12 +54,11 @@
       Font-Family: 'Questrial', Sans-Serif;
       // Font-Family: 'Old Standard TT', Serif;
       Font-Size: 48px;
-      float: left;
-      margin: 25px 0 0 20px;
+      padding: 10px 0 0 0;
+      text-align: center;
     }
 
     .nav {
-      float: right;
       .nav-button, .nav-home {
         font-size: 16px;
         font-weight: 400;
@@ -67,7 +66,7 @@
         color: rgb(56, 56, 56);
         background-color: rgb(180, 180, 180);
         border: 0;
-        margin: 40px 15px 0 0; 
+        margin: 10px 15px 0 0; 
       }
 
       .nav-button:hover, .nav-home:hover {
@@ -232,7 +231,7 @@
   }
   .footer p {
     margin: 0;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   .footer a {
@@ -250,10 +249,22 @@
 }
 
 
-@media (min-width: 500px) {
-  .site-night {
-    .nav {
-      float: right;
+@media (min-width: 600px) {
+  .site-day {
+    .head {
+      height: 100px;
+    
+      .nav {
+        float: right;
+      
+        .nav-button, .nav-home {
+          margin: 40px 15px 0 0; 
+        }
+      }
+    }
+    .site-logo {
+      float: left;
+      margin: 15px 0 0 20px;
     }
   }
 }
