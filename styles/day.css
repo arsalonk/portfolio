@@ -159,7 +159,7 @@
   box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
 }
 .site-day .container .about {
-  margin: 0 0 -10px 0;
+  margin: 0 0 -15px 0;
 }
 .site-day .container .contact-container {
   min-width: 250px;
@@ -201,7 +201,7 @@
   background-color: #a5a5a5;
 }
 .site-day .footer {
-  margin: 70px auto 0 auto;
+  margin: 40px auto 0 auto;
   padding: 0 0 10px 0;
 }
 .site-day .footer p {
