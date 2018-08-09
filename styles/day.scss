@@ -59,6 +59,7 @@
       // Font-Family: 'Old Standard TT', Serif;
       Font-Size: 48px;
       padding: 10px 0 0 0;
+      margin: 0 auto;
       text-align: center;
     }
 
@@ -106,7 +107,7 @@
         min-width: 150px;
         height: 40px;
         font-size: 14px;
-        color: rgb(10, 10, 10);
+        color: rgb(255, 255, 255);
         background-color: rgb(12, 103, 126);
         border: 2px solid rgb(7, 7, 7);
       }
@@ -257,6 +258,11 @@
   .site-day {
     .head {
       height: 100px;
+
+      .site-logo {
+        float: left;
+        margin: 15px 0 0 20px;
+      }
     
       .nav {
         float: right;
@@ -266,9 +272,15 @@
         }
       }
     }
-    .site-logo {
-      float: left;
-      margin: 15px 0 0 20px;
+  }
+}
+
+@media (max-height: 650px) and (max-width: 380px) {
+  .site-day {
+    .container {
+      .contact-container {
+        top: 60%;
+      }
     }
   }
 }
