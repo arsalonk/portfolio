@@ -156,6 +156,14 @@
 .site-night .container .about {
   margin: 0 0 -10px 0;
 }
+.site-night .container .about .about-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.site-night .container .about .about-container p {
+  text-align: left;
+  font-size: 16px;
+}
 .site-night .container .contact-container {
   min-width: 250px;
   position: absolute;
