@@ -38,15 +38,15 @@ function showHome() {
 function toggleTheme() {
   $('#switch').click(function () {
     if ($('#switch').hasClass('switched')) {
-      $('#full-site').removeClass('day')
-      $('#full-site').addClass('night')
+      $('#full-site').removeClass('site-day')
+      $('#full-site').addClass('site-night')
       $('#sea').removeClass('sea-day');
       $('#sea').addClass('sea-night');
       $('#switch').removeClass('switched');
     }
     else {
-      $('#full-site').removeClass('night')
-      $('#full-site').addClass('day')
+      $('#full-site').removeClass('site-night')
+      $('#full-site').addClass('site-day')
       $('#sea').removeClass('sea-night');
       $('#sea').addClass('sea-day');
       $('#switch').addClass('switched');

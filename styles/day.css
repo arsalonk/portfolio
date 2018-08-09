@@ -1,0 +1,227 @@
+@charset "UTF-8";
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.site-day {
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100vh;
+  Font-Family: "Open Sans", Sans-Serif;
+  Font-Size: 15px;
+}
+.site-day .hidden {
+  display: none;
+}
+.site-day #switch,
+.site-day #circle {
+  height: 30px;
+  -webkit-transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
+  transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
+}
+.site-day #switch {
+  width: 60px;
+  margin: 15px auto 0 auto;
+  border: 2px solid #1C3958;
+  border-radius: 27px;
+  background: #1C3958;
+  position: relative;
+}
+.site-day #circle {
+  margin-top: 5%;
+  margin-left: 5%;
+  width: 40%;
+  height: 80%;
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(26, 53, 71, 0.25), 0 0 0 1px rgba(26, 53, 71, 0.07);
+  background: #e9e5d5;
+}
+.site-day .switched {
+  border-color: #f5cf97 !important;
+  background: #f5cf97 !important;
+}
+.site-day .switched #circle {
+  margin-left: 55%;
+  background: #e9e5d5;
+}
+.site-day .head {
+  height: 100px;
+  background-color: #b4b4b4;
+}
+.site-day .head .site-logo {
+  Font-Family: "Questrial", Sans-Serif;
+  Font-Size: 48px;
+  float: left;
+  margin: 25px 0 0 20px;
+}
+.site-day .head .nav {
+  float: right;
+}
+.site-day .head .nav .nav-button, .site-day .head .nav .nav-home {
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: #383838;
+  background-color: #b4b4b4;
+  border: 0;
+  margin: 40px 15px 0 0;
+}
+.site-day .head .nav .nav-button:hover, .site-day .head .nav .nav-home:hover {
+  color: #2b2b2b;
+}
+.site-day .container {
+  min-height: 75vh;
+  padding: 0 20px;
+}
+.site-day .container .page {
+  text-align: center;
+  color: black;
+}
+.site-day .container .home-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.site-day .container .home-content .home-text {
+  Font-Family: "Ubuntu", Sans-Serif;
+  Font-Size: 48px;
+  margin: 0;
+}
+.site-day .container .home-content .home-button {
+  margin-top: 30px;
+  min-width: 150px;
+  height: 40px;
+  font-size: 14px;
+  color: #0a0a0a;
+  background-color: #0c677e;
+  border: 2px solid #070707;
+}
+.site-day .container .home-content .home-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.site-day .container .home-content .home-button span:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.site-day .container .home-content .home-button:hover span {
+  padding-right: 25px;
+}
+.site-day .container .home-content .home-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.site-day .container .p-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+.site-day .container .p-container .project {
+  /* border-radius: 8px; */
+  margin: 40px 0;
+  background-color: lightgray;
+  list-style: none;
+  -webkit-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+.site-day .container .p-container .project .project-image {
+  /* border-radius: 8px 8px 0 0; */
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  max-height: 400px;
+}
+.site-day .container .p-container .project .project-info {
+  padding: 10px 30px;
+  font-size: 16px;
+}
+.site-day .container .p-container .project .project-info .project-links a {
+  text-decoration: none;
+  padding: 5px;
+  color: teal;
+}
+.site-day .container .p-container .project:hover {
+  transition: 0.15s;
+  transform: scale(1.01);
+  -webkit-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.35);
+}
+.site-day .container .about {
+  margin: 0 0 -10px 0;
+}
+.site-day .container .contact-container {
+  min-width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.site-day .container .contact-container .email, .site-day .container .contact-container .message, .site-day .container .contact-container .name {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  padding-left: 5px;
+  border: 1px solid #727272;
+  font-size: 20px;
+  border-radius: 4px;
+}
+.site-day .container .contact-container .email, .site-day .container .contact-container .name {
+  height: 50px;
+}
+.site-day .container .contact-container .message {
+  height: 200px;
+}
+.site-day .container .contact-container .sbt-button {
+  cursor: pointer;
+  margin: auto;
+  width: 50%;
+  height: 35px;
+  border-radius: 4px;
+  font-size: 18px;
+  color: white;
+  border: 2px solid #242424;
+  background-color: #0c677e;
+}
+.site-day .container .contact-container .sbt-button:hover {
+  font-weight: 400;
+  color: #0c677e;
+  border: 2px solid #0c677e;
+  background-color: #a5a5a5;
+}
+.site-day .footer {
+  margin: 70px auto 0 auto;
+  padding: 0 0 10px 0;
+}
+.site-day .footer p {
+  margin: 0;
+  color: white;
+}
+.site-day .footer a {
+  font-size: 50px;
+  margin: 10px;
+  color: #16697e;
+  text-decoration: none;
+}
+.site-day .footer a:hover {
+  transition: 0.15s;
+  transform: scale(1.5);
+  color: #0b3641;
+}
+
+@media (min-width: 500px) {
+  .site-night .nav {
+    float: right;
+  }
+}
+
+/*# sourceMappingURL=day.css.map */
