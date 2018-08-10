@@ -228,5 +228,10 @@
     float: right;
   }
 }
+@media (max-height: 650px) and (max-width: 380px) {
+  .site-night .footer {
+    margin: 50px auto 0 auto;
+  }
+}
 
 /*# sourceMappingURL=night.css.map */
