@@ -49,13 +49,13 @@
     -ms-filter:"alpha(opacity=100)";
   }
 
-  #switch,
-  #circle {
+  .switch,
+  .circle {
     height: 30px;
     -webkit-transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
             transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
   } 
-  #switch {
+  .switch {
     width: 60px;
     margin: 15px auto 0 auto;
     border: 2px solid #1C3958;
@@ -63,7 +63,7 @@
     background: #1C3958;
     position: relative;
   }
-  #circle {
+  .circle {
     margin-top: 5%;
     margin-left: 5%;
     width: 40%;
@@ -76,7 +76,7 @@
     border-color: rgb(245, 207, 151) !important;
     background: rgb(245, 207, 151) !important;
   }
-  .switched #circle {
+  .switched .circle {
     margin-left: 55%;
     background: #e9e5d5;
   }
@@ -110,8 +110,8 @@
         text-decoration: none;
       }
 
-      .nav-button:hover, .nav-home:hover {
-        color: rgb(43, 43, 43);
+      .nav-button a:hover, .nav-home:hover {
+        color: rgb(165, 106, 16);
       }
     }
   }
