@@ -21,12 +21,13 @@
     <h1 class="site-logo">Sayed Khan</h1>
     <nav role="navigation" id="nav" class="nav">
       <button class="nav-home">Home</button>
-      <button class="nav-button">Projects</button>
-      <button class="nav-button">About</button>
-      <button class="nav-button">Contact</button>
+      <button class="nav-button"><a href='#About'>About</a></button>
+      <button class="nav-button"><a href='#Projects'>Projects</a></button>
+      <button class="nav-button"><a href='#Contact'>Contact</a></button>
     </nav>
   </header>
   <main role="main" class="container">
+    <a href="#" id="scroll" class="scroll" style="display: none;"><span></span></a>
     <section role="region" id="Home" class="home page">
       <div class="home-content">
           <div id="sea" class="sea-night">
@@ -59,8 +60,21 @@
       </div>
     </section>
 
+    <section role="region" id="About" class="about hidden page site">
+      <div class="about-container">
+      <h2>About</h2>
+      <img class="about-img" src="https://media.licdn.com/dms/image/C4D03AQHn-tjeDHXPVg/profile-displayphoto-shrink_800_800/0?e=1537401600&v=beta&t=i4O7yXaUUx1TY0GtcOSR-_nwW5gNfIhQ_xCYZV3CXJE"  alt='Sayed Khan'/>
+      <p>Hi, my name is Sayed Khan and I'm a Full-Stack developer based near Washington D.C. I prefer writing code to writing words so I'll keep this brief.
+        I love puzzles and I've always had a passion for creating things. Coding combines both of those into one so it feels more like play than it does work.
+        Using a MERN stack with a focus on mobile first, responsive design, I always aim to produce unique, complete, and functional code. 
+        Outside of coding I love books and enjoy cooking from time to time. 
+      </p>
+      </div>
+    </section>
+
     <section role="region" id="Projects" class="projects page hidden site">
       <ul class="p-container">
+        <h2>Projects</h2>
         <li class="project">
           <img class='project-image' src="images/tankler.PNG" alt="screenshot of tankler login page" />
           <div class="project-info">
@@ -101,7 +115,7 @@
           <img class="project-image" src="images/abjadify.PNG" alt="screenshot of Abjadify" />
           <div class="project-info">
             <p>
-              Abjadify is a tool built to be used with the Quran. Each arabic letter has number values assigned to them, Abjadify uses
+              A web app built for a client, Abjadify is a tool meant to be used with the Quran. Each arabic letter has number values assigned to them, Abjadify uses
               both the heavenly and earthly abjad values to take the user inputted arabic text and return total sums of the
               text, sums for each word, and number values for every letter. Abjadify also informs the user whether the text
               they have inputted is divisible by either 9 or 7 and the mod 9 value of the text.
@@ -137,20 +151,9 @@
       </ul>
     </section>
 
-    <section role="region" id="About" class="about hidden page">
-      <div class="about-container">
-      <h2>About</h2>
-      <img class="about-img" src="https://media.licdn.com/dms/image/C4D03AQHn-tjeDHXPVg/profile-displayphoto-shrink_800_800/0?e=1537401600&v=beta&t=i4O7yXaUUx1TY0GtcOSR-_nwW5gNfIhQ_xCYZV3CXJE"  alt='Sayed Khan'/>
-      <p>Hi, my name is Sayed Khan and I'm a Full-Stack developer based near Washington D.C. I prefer writing code to writing words so ill keep this brief.
-        I love puzzles and I've always had a passion for creating things, coding combines both of those into one so it feels more like play than it does work.
-        Using a MERN stack with a focus on mobile first, responsive design, I always aim to produce unique, complete, and functional code. 
-        Outside of coding I love books and enjoy cooking from time to time. 
-      </p>
-      </div>
-    </section>
-
-    <section role="region" id="Contact" class="contact hidden page">
+    <section role="region" id="Contact" class="contact hidden page site">
       <div class=contact-container>
+        <h2>Contact</h2>
         <p>If you have any questions or would like to work together, feel free to reach out!</p>
         <form class="contact-form" action="https://formspree.io/arsalon47@gmail.com" method="POST">
           <input type="text" class="name" name="name" placeholder="Name">
@@ -174,7 +177,8 @@
     <p>&copy; 2018 Sayed Khan</p>
   </footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="scripts/scroll.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
 </body>
 
 </html>
